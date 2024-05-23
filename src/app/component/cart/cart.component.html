@@ -1,0 +1,31 @@
+<strong class="cartmassage" *ngIf="CartMassage">
+  No Selected Items
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTjZvDd4dJgdK4vfaRQrJ4zenodDXAFFXBaw&usqp=CAU" alt="">
+</strong>
+
+<div class="container" *ngIf="hide">
+  <table class="table">
+    <thead>
+      <tr border="1">
+        <th scope="col">ProductName</th>
+        <th scope="col">Description</th>
+        <th scope="col">Rating</th>
+        <th scope="col">price</th>
+        <th scope="col">image</th>
+        <th scope="col" class="totalPrice">totalprice: ${{totalPrice}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of product">
+        <td>{{item.title}}</td>
+        <td>{{item.category}}</td>
+        <td>{{item.rating.rate}}</td>
+        <td>{{item.price | currency}}</td>
+        <td><img style="width: 70px; height: 70px;" src="{{item.image}}" alt=""></td>
+        <td><button class="btn btn-danger" (click)="deleteItem(item.id)">Delete</button></td>
+      </tr>
+      <tr>
+    </tbody>
+  </table>
+
+</div>

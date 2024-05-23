@@ -1,0 +1,17 @@
+<div class="container">
+    <header>
+        <h1>Product Details</h1>
+    </header>
+    <main>
+        <div class="product-image">
+            <img src="{{selectedItems.image}}" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Product Name: {{selectedItems.title}}</h2>
+            <p>Rating : {{selectedItems.rating.rate}}</p>
+            <p class="price">Price:${{selectedItems.price}}</p>
+            <p class="description">Descriptions:{{selectedItems.description}}</p>
+            <ng-content></ng-content>
+        </div>
+    </main>
+</div>

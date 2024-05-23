@@ -1,0 +1,24 @@
+.container{
+ margin-top: 20px;
+  height: 320px;
+  /* background-color: aquamarine; */
+  
+
+}
+.card{
+    height: 300px;
+    background-color: beige;
+    text-align: center;
+    border: none;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 31px;
+}
+.link i{
+    font-size: xx-large;
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.cartmassage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.totalPrice{
+    font-size: medium;
+    color: #6030ec;
+    font-style: italic;
+}

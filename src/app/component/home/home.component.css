@@ -1,0 +1,77 @@
+.new-item-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-item-heading strong {
+    font-size: 60px;
+    font-style: oblique;
+    font-family: auto;
+}
+
+
+.container {
+    margin-top: 20px;
+}
+
+.productList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.row {
+    gap: 35px;
+
+}
+
+.card {
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 22%;
+}
+
+.card img {
+    height: 216px;
+    width: 235px;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.btn {
+    margin: 5px;
+}
+
+.fix-Content {
+    position: fixed;
+    top: 20px;
+    z-index: 1;
+    width: 874px;
+    margin-left: 10px;
+    background: ghostwhite;
+}
+
+#close-btn {
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0;
+    margin-bottom: 9px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

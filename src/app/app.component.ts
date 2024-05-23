@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'E-comm';
+  constructor(){
+    localStorage.setItem("formData","false");
+  }
 }
